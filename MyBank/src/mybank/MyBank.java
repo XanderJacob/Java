@@ -18,7 +18,7 @@ public class MyBank {
     public static void main(String[] args) {
         ClassChallenge account = new ClassChallenge();
 
-        account.setAccountNumber("22102588");
+        account.setAccountNumber(22102588);
         account.setAccountBalance(1000.0);
         account.setCustomerName("Xander Jacob");
         account.setEmail("waragud@gmail.com");

@@ -13,17 +13,17 @@ public class ClassChallenge {
 
     
     
-   private String accountNumber;
+   private int accountNumber;
     private double accountBalance;
     private String customerName;
     private String email;
     private String phoneNumber;
 
-    public String getAccountNumber() {
+    public int getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(String accountNumber) {
+    public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
 
@@ -73,7 +73,6 @@ public class ClassChallenge {
            if (accountBalance - amount >= 0) {
                accountBalance -= amount;
                return true;
-           
            }else{
                return false;
            }
@@ -81,6 +80,10 @@ public class ClassChallenge {
 
     public void displayFunds() {
         System.out.println("Updated balance: $" + accountBalance);
+    }
+
+    void setAccountNumber(String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
     
