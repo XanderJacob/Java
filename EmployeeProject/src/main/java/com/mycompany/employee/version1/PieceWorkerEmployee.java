@@ -11,21 +11,21 @@ public class PieceWorkerEmployee {
     private int totalPiecesFinished;
     private float ratePerPiece;
 
-    // Default constructor
+
     public PieceWorkerEmployee() {
     }
 
-    // Constructor for a new employee (minimum wage)
+    
     public PieceWorkerEmployee(int empID, String empName, LocalDate empDateHired, LocalDate empBirthdate) {
         this.empID = empID;
         this.empName = empName;
         this.empDateHired = empDateHired;
         this.empBirthdate = empBirthdate;
         this.totalPiecesFinished = 0;
-        this.ratePerPiece = 1.0f; // Minimum wage
+        this.ratePerPiece = 1.0f; 
     }
 
-    // Constructor for a regular employee with specified ratePerPiece
+    
     public PieceWorkerEmployee(int empID, String empName, LocalDate empDateHired, LocalDate empBirthdate,
             float ratePerPiece) {
         this.empID = empID;
@@ -36,7 +36,7 @@ public class PieceWorkerEmployee {
         this.ratePerPiece = ratePerPiece;
     }
 
-    // Accessors (getters)
+   
     public int getEmpID() {
         return empID;
     }
@@ -61,7 +61,7 @@ public class PieceWorkerEmployee {
         return ratePerPiece;
     }
 
-    // Mutators (setters)
+  
     public void setEmpID(int empID) {
         this.empID = empID;
     }
@@ -86,14 +86,14 @@ public class PieceWorkerEmployee {
         this.ratePerPiece = ratePerPiece;
     }
 
-    // Method to compute the salary
+    
     public double computeSalary() {
         int bonusPieces = totalPiecesFinished / 100;
         double salary = totalPiecesFinished * ratePerPiece + bonusPieces * 10 * ratePerPiece;
         return salary;
     }
 
-    // Method to display employee information
+    
     public void displayInfo() {
         System.out.println("Employee ID: " + empID);
         System.out.println("Employee Name: " + empName);
@@ -104,7 +104,7 @@ public class PieceWorkerEmployee {
         System.out.println("Salary: $" + computeSalary());
     }
 
-    // Override toString method
+    
     @Override
     public String toString() {
         return "Employee Information:\n"
