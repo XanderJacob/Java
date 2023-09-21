@@ -36,7 +36,7 @@ public class PieceWorkerEmployee {
         this.ratePerPiece = ratePerPiece;
     }
 
-   
+    
     public int getEmpID() {
         return empID;
     }
@@ -61,7 +61,7 @@ public class PieceWorkerEmployee {
         return ratePerPiece;
     }
 
-  
+   
     public void setEmpID(int empID) {
         this.empID = empID;
     }

@@ -10,21 +10,21 @@ public class CommissionEmployee {
     private double sales;
     private double commissionRate;
 
-    // Default constructor
+    
     public CommissionEmployee() {
     }
 
-    // Constructor for a new employee (minimum commission rate)
+    
     public CommissionEmployee(int empID, String empName, LocalDate empDateHired, LocalDate empBirthdate) {
         this.empID = empID;
         this.empName = empName;
         this.empDateHired = empDateHired;
         this.empBirthdate = empBirthdate;
         this.sales = 0.0;
-        this.commissionRate = 0.05; // 5% for low sales
+        this.commissionRate = 0.05;
     }
 
-    // Constructor for a regular employee with specified commission rate
+  
     public CommissionEmployee(int empID, String empName, LocalDate empDateHired, LocalDate empBirthdate,
             double commissionRate) {
         this.empID = empID;
@@ -35,7 +35,7 @@ public class CommissionEmployee {
         this.commissionRate = commissionRate;
     }
 
-    // Accessors (getters)
+   
     public int getEmpID() {
         return empID;
     }
