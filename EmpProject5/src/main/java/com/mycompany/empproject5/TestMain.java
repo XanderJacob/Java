@@ -30,22 +30,8 @@ public class TestMain {
         HourlyEmployee emp5 = new HourlyEmployee(5, new Name("John", "Doe"), LocalDate.now(), LocalDate.of(2000, 5, 15), 40, 15.0f);
         employeeRoster.addEmployee(emp5);
 
-        employeeRoster.removeEmployee(2);
-
-        EmployeeRoster searchResult = employeeRoster.searchEmployee("Curry");
-        System.out.println("Search Result:");
-        searchResult.displayAllEmployee();
-
-        int hourlyEmployeeCount = employeeRoster.countHourEmployee();
-        int pieceWorkerEmployeeCount = employeeRoster.countPieceWorkerEmployee();
-        int commissionEmployeeCount = employeeRoster.countCommissionEmployee();
-        int basePlusCommissionEmployeeCount = employeeRoster.countBasePlusCommisionEmployee();
-
-        System.out.println("Hourly Employee Count: " + hourlyEmployeeCount);
-        System.out.println("Piece Worker Employee Count: " + pieceWorkerEmployeeCount);
-        System.out.println("Commission Employee Count: " + commissionEmployeeCount);
-        System.out.println("Base Plus Commission Employee Count: " + basePlusCommissionEmployeeCount);
-
+        
+ 
         employeeRoster.displayEmployeeByType("H");
         employeeRoster.displayEmployeeByType("C");
         employeeRoster.displayEmployeeByType("B");
